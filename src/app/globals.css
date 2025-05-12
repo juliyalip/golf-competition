@@ -18,7 +18,8 @@
     --foreground: #ededed;
   }
 }
-*{
+
+* {
   box-sizing: border-box;
 }
 
@@ -26,4 +27,55 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-icon {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 100%;
+  background-color: oklch(51.1% 0.262 276.966);
+  border-radius: 10px;
+  transition: background-color 250ms ease
+}
+
+.menu-icon::after,
+.menu-icon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url('/lamp.svg') no-repeat center;
+  transition: transform 250ms ease, background-color 250ms ease;
+}
+
+.menu-icon::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-icon::before {
+  bottom: -25px;
+  left: -20px;
+}
+
+
+.menu-link{
+  cursor: pointer;
+ display: flex;
+ align-items: center;
+}
+
+.menu-link:hover .menu-icon::after{
+  transform: translate(calc(100% + 10px), calc(-100% - 10px));
+}
+
+.menu-link:hover .menu-icon::before{
+  transform: translate(30px, -35px)
+}
+
+.menu-link:hover .menu-icon{
+  background-color: oklch(48.8% 0.243 264.376);
 }
