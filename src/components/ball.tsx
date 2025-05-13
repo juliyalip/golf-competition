@@ -23,8 +23,6 @@ export default function Ball({scrollTargetRef}: BallProps) {
            style={{x: smoothX, y: smoothY, scale: smoothScale}}
            transition={{duration: 5, ease: [0.4, 0, 0.2, 1]}}
             className='absolute top-[10%] left-[10%] z-10 w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] 
-
-
             md:left-[40%] md:top-[80%] md:w-[270px] md:h-[270px] mx-auto'>
             <img src='/images/ball.webp' srcSet="/images/ball.webp 1x, /images/ball_2x.png 2x, /images/ball_3x.png 3x" alt="ball" width={80} height={80} className='w-full h-full' />
         </motion.div>

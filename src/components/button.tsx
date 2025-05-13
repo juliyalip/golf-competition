@@ -1,10 +1,8 @@
 import React from 'react'
 
-//  library className !!!
 interface ButtonProp extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     children: React.ReactNode,
     className?: string
-   
 }
 
 export default function Button({children, className="", ...rest}: ButtonProp){

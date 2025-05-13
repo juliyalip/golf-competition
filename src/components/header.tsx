@@ -27,7 +27,7 @@ export default function Header() {
                     <div className="bg-gray-200/50 px-1 rounded-2xl flex items-center">
                         <img src='/premier.svg' alt='logo premier' className="w-[100px]  md:w-[150px] lg:w-[200px] " />
                     </div>
-                    <div className="ml-auto flex align-middle bg-gray-200/50 rounded-2xl px-1 py-1">
+                    <div className="ml-auto flex align-middle bg-gray-200/50 rounded-2xl p-[4px]">
                         <Link href="#" className="hidden md:inline-block md:border-[1.5px] md:border-black-100 px-4 cursor-pointer
            py-2 rounded-[4px]  hover:bg-blue-700 hover:border-blue-700 mr-1
             hover:text-white transition-colors  duration-150 

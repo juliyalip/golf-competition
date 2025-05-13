@@ -6,15 +6,13 @@ import ContainerHero from '@/components/containerHero';
 
 export default function Home() {
   return (<>
-     <Header />
-      <main>
-          <ContainerHero>
-          
+    <Header />
+    <main className='mb-20'>
+      <ContainerHero>
         <Premier />
         <Hero />
-        </ContainerHero>
-      </main>
-
+      </ContainerHero>
+    </main>
   </>
   );
 }
