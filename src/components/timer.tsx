@@ -25,7 +25,7 @@ export default function Timer() {
   ];
 
   return (
-    <div className="grid grid-cols-3  w-fit gap-4 ml-auto  ">
+    <div className="grid grid-cols-3  w-fit gap-2 mx-auto mb-4 md:mx-0 md:ml-auto    ">
       {options.map(({ option, time }) => (
         <Box key={option} option={option} time={time} />
       ))}

@@ -36,6 +36,7 @@ body {
   height: 100%;
   background-color: oklch(51.1% 0.262 276.966);
   border-radius: 10px;
+  overflow: hidden;
   transition: background-color 250ms ease
 }
 
@@ -76,6 +77,8 @@ body {
   transform: translate(30px, -35px)
 }
 
-.menu-link:hover .menu-icon{
+.menu-link:hover .menu-icon,
+.menu-link:hover > a {
   background-color: oklch(48.8% 0.243 264.376);
 }
+
