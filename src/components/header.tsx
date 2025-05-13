@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import { useState, useRef } from 'react'
 import { useScroll, useMotionValueEvent, motion, easeOut } from "framer-motion"
@@ -33,9 +34,11 @@ export default function Header() {
             hover:text-white transition-colors  duration-150 
         ease-in-out text-base lg:mr-2 lg:border-[1.5px] lg:rounded-xl" >Agenda</Link>
                         <div className="menu-link">
+
+
                             <Link href="#" className="transition-colors text-base duration-150 cursor-pointer
-        ease-in-out  border-2 border-indigo-600 bg-indigo-600 text-white rounded-[4px]
-         inline-flex px-3 py-1  text-[14px]
+        ease-in-out text-[10px] border-2 border-indigo-600 bg-indigo-600 text-white rounded-[4px]
+         inline-flex px-[8px] py-[6px]  
       md:text-base md:px-4 md:py-2 lg:border-[1.5px] lg:rounded-xl"> Buy tickets </Link>
                             <span className="menu-icon"></span>
                         </div>

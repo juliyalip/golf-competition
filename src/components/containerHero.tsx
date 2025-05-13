@@ -8,7 +8,7 @@ interface Prop {
 
 export default function ContainerHero({ children }: Prop) {
   return (
-    <div className="w-full min-h-screen relative overflow-hidden m-0">
+    <div className="w-full min-h-screen relative  m-0">
       <motion.div
         className="absolute top-[-10vh] left-0 w-full h-[80vh] -z-10"
         style={{

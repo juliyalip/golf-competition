@@ -49,7 +49,9 @@ body {
   height: 25px;
   background: url('/lamp.svg') no-repeat center;
   transition: transform 250ms ease, background-color 250ms ease;
-}
+  }
+
+
 
 .menu-icon::after {
   top: 50%;
@@ -80,4 +82,6 @@ body {
 .menu-link:hover > a {
   background-color: oklch(48.8% 0.243 264.376);
 }
+
+
 

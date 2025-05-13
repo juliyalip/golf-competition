@@ -5,6 +5,7 @@ import Baner from "./baner";
 import Ball from "./ball";
 
 export default function Hero() {
+
 const scroll = useRef(null)
 
   return (
