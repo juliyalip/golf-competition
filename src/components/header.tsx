@@ -34,8 +34,6 @@ export default function Header() {
             hover:text-white transition-colors  duration-150 
         ease-in-out text-base lg:mr-2 lg:border-[1.5px] lg:rounded-xl" >Agenda</Link>
                         <div className="menu-link">
-
-
                             <Link href="#" className="transition-colors text-base duration-150 cursor-pointer
         ease-in-out text-[10px] border-2 border-indigo-600 bg-indigo-600 text-white rounded-[4px]
          inline-flex px-[8px] py-[6px]  

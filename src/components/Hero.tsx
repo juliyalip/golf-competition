@@ -1,5 +1,4 @@
 "use client"
-
 import React, {useRef} from "react";
 import Baner from "./baner";
 import Ball from "./ball";
@@ -7,7 +6,6 @@ import Ball from "./ball";
 export default function Hero() {
 
 const scroll = useRef(null)
-
   return (
     <div className="relative container mx-auto px-4">
       <Ball scrollTargetRef={scroll}/>

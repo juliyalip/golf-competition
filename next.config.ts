@@ -1,7 +1,9 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
-  basePath: '/golf-competition',
-  assetPrefix: '/golf-competition/',
+  basePath: isProd ? '/golf-competition' : '',
+  assetPrefix: isProd ? '/golf-competition/' : '',
 };
 
 module.exports = nextConfig;

@@ -9,7 +9,7 @@ export default function Premier() {
                     <Image src='/charity.svg' alt="logo charity" fill className="object-contain" />
                 </div>
                 <div className="mb-10 font-normal md:text-2xl mb:mb-20 lg:mb-15">PREMIER 2025</div>
-                <h1 className="font-semibold text-2xl   md:text-2xl  lg:text-4xl ">Let’s Drive <br className="md:hidden" />Change!</h1>
+                <h1 className="font-semibold text-2xl   md:text-2xl  lg:text-4xl xl:text-6xl ">Let’s Drive <br className="md:hidden" />Change!</h1>
             </div>
         </Container>
     )

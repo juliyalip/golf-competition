@@ -1,27 +1,20 @@
 "use client";
-import { useState, useEffect } from "react";
 import Box from "./box";
-import { getTimeLeft, TimeLeft } from "@/helpers/getTimeLeft";
+import { TimeLeft } from "@/helpers/getTimeLeft";
 
-const targetDate = new Date("2025-09-22T15:30:00");
+interface TimerProp{
+  targetTime: TimeLeft | null
+}
 
-export default function Timer() {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(() =>
-    getTimeLeft(targetDate)
-  );
+export default function Timer({targetTime}: TimerProp) {
+if(!targetTime){
+  return null
+}
 
-  useEffect(() => {
-    const interveiId = setInterval(() => {
-      const result = getTimeLeft(targetDate);
-      setTimeLeft(result);
-    }, 1000);
-    return () => clearInterval(interveiId);
-  }, []);
-
-  const options = [
-    { option: "Days", time: timeLeft.days },
-    { option: "Hours", time: timeLeft.hours },
-    { option: "Minutes", time: timeLeft.minutes },
+    const options = [
+    { option: "Days", time: targetTime.days },
+    { option: "Hours", time: targetTime.hours},
+    { option: "Minutes", time: targetTime.minutes },
   ];
 
   return (

@@ -11,7 +11,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        "banner-gradient": `bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%`
+        "banner-gradient": "radial-gradient(at 50% 75%, var(--tw-gradient-stops))"
       }
     }
   },

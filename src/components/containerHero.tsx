@@ -10,7 +10,7 @@ export default function ContainerHero({ children }: Prop) {
   return (
     <div className="w-full min-h-screen relative  m-0">
       <motion.div
-        className="absolute top-[-10vh] left-0 w-full h-[80vh] -z-10"
+        className="absolute top-[-10vh] left-[-10%] w-[120%] h-[80vh] -z-10"
         style={{
           backgroundImage: `url('/images/background_1.jpg')`,
           backgroundSize: "cover",
